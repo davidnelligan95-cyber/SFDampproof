@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — SF Damp Surveying & Remedial Works</title>
+  <meta name="description" content="Contact SF Damp Surveying & Remedial Works for a free damp survey and quote." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+         <a class="brand" href="index.html"><img src="assets/stevo-logo-2.png" alt="SF Damp Surveying & Remedial Works logo" /></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact Us</h1>
+    <p>Please fill in the form and we'll get back to you promptly.</p>
+
+    <form action="mailto:sfdampproofing@gmail.com" method="POST" enctype="text/plain" class="contact-form">
+      <label for="name">Name</label>
+      <input id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required />
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <input type="hidden" name="_subject" value="New contact from website" />
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <section class="contact-info">
+      <h2>Phone</h2>
+      <p><strong>07957730011</strong></p>
+      <h2>Email</h2>
+      <p>sfdampproofing@gmail.com</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> SF Damp Surveying & Remedial Works <img src="assets/FOD.jpeg" alt="Registered FOD badge" style="height:80px;width:auto" /></div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

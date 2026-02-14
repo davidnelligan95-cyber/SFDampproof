@@ -1,0 +1,32 @@
+:root{
+  --brand:#0a6b4a;
+  --muted:#666;
+  --bg:#f8f8f8;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,sans-serif;color:#222;margin:0;background:var(--bg);}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:#fff;border-bottom:1px solid #e6e6e6}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.brand img{height:80px;width:auto}
+.site-nav a{margin-left:1rem;color:var(--muted);text-decoration:none}
+.hero{padding:3.5rem 0;background:linear-gradient(180deg,#ffffff, #f1f8f4)}
+.hero h1{margin:0 0 .5rem;color:var(--brand)}
+.hero p{margin:0 0 1rem;color:var(--muted)}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--brand);color:#fff;border-radius:6px;text-decoration:none}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.more{margin-top:.75rem}
+.about-cta{padding:1.5rem 0}
+.site-footer{background:#fff;border-top:1px solid #e6e6e6;padding:1rem 0;margin-top:2rem}
+
+.contact-page{display:grid;grid-template-columns:1fr 320px;gap:2rem;padding:2rem 1rem}
+.contact-form label{display:block;margin-top:.75rem;font-weight:600}
+.contact-form input,.contact-form textarea{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px;margin-top:.25rem}
+
+@media(max-width:800px){
+  .contact-page{grid-template-columns:1fr}
+  .site-header .container{padding:.5rem}
+  .brand img{height:64px}
+}
